@@ -12,7 +12,7 @@ $(window).scroll(function(event){
    if (st > lastScrollTop){
        $('header').css('height', '0');
    } else {
-       $('header').css('height', '3.5em')
+       $('header').css('height', 'auto')
    }
    lastScrollTop = st;
 });
