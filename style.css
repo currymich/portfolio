@@ -72,7 +72,7 @@ header nav ul a {
   cursor: pointer;
 }
 
-header nav ul a:hover, nav ul a:active {
+header nav ul a:hover, nav ul a.active {
   color: #21564b;
 }
 
