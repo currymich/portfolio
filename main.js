@@ -1,3 +1,5 @@
 $(document).ready(function(){
-  console.log('howdy world')
+  $('#menuButton').on('click', function(event){
+    $('header nav ul li').toggleClass('active')
+  })
 })
