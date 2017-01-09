@@ -8,29 +8,45 @@ body {
   font-size: 20px;
   color: #45b29a;
   font-family: "Patrick Hand", sans-serif;
-  background: #ddd;
+}
+
+.pageBreak {
+  color: #ddd;
+  text-align: center;
 }
 
 header {
+  position: absolute;
+  top: 0;
   width: 100%;
-  background: #fff;
   overflow: auto;
 }
 
-h2 {
+header h3 {
   float: left;
   display: inline-block;
-  width: 66.66%;
-  padding: 0.1em 0.25em;
+  width: 80%;
+  padding: 0.3em 0.6em;
   font-family: "Lobster";
 }
 
-nav {
-  width: 33.33%;
+#menuButton {
+  clear: none;
+  height: 2.2em;
+  padding: 0 0.4em 0.8em 1.0em;
+}
+
+.active {
+  height: 1.5em;
+}
+
+header nav {
+  width: 20%;
+  padding: 0.25em;
   float: right;
 }
 
-nav ul {
+header nav ul {
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -38,30 +54,125 @@ nav ul {
   justify-content: space-between;
 }
 
-nav ul li {
+header nav ul li {
   height: 0;
   overflow: hidden;
-  transition: all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  padding: 0 0.25em;
+  transition: all 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   text-align: right;
 }
 
-#menuButton {
-  height: 1.5em;
-  padding: 0.4em;
-}
-
-.active {
-  height: 1.5em;
-}
-
-nav ul a {
+header nav ul a {
   text-decoration: none;
   color: #45b29a;
   font-size: 0.75em;
+  padding: 0.75em 0.5em;
   cursor: pointer;
 }
 
-nav ul a:hover, nav ul a:active {
+header nav ul a:hover, nav ul a:active {
   color: #21564b;
+}
+
+section {
+  width: 90%;
+  margin: 0 auto;
+  padding: 2em 0;
+  text-align: center;
+}
+
+section h1, section h2 {
+  font-family: 'Quicksand';
+}
+
+section h1 {
+  color: #1e836c;
+  font-size: 2.0em;
+  padding: 0.5em 0;
+}
+
+section h2 {
+  padding: 1em 0;
+}
+
+section h3 {
+  padding: 0.5em 0;
+  text-decoration: underline;
+}
+
+section p {
+  color: #555;
+}
+
+#hello {
+  margin-top: 2em;
+}
+
+.circle.img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.skills.img {
+  width: 100px;
+  margin: 0.5em;
+}
+
+.container.skills {
+  margin: 1.5em 0;
+}
+
+.screens.img {
+  width: 225px;
+  margin: 0.5em;
+}
+
+#hire_me span {
+  font-style: italic;
+}
+
+.btn {
+  margin: 2em 0;
+  padding: 0.25em 0;
+  font-size: 1.2em;
+  border-radius: 0.2em;
+  background: #45b29a;
+}
+
+.btn a {
+  padding: 0.25em 1em;
+  text-decoration: none;
+  color: #1b7f69;
+  font-family: 'Quicksand';
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #3ea08a;
+}
+
+footer {
+  background: #c5ded7;
+  text-align: center;
+  height: 6em;
+}
+
+footer ul {
+  width: 40%;
+  margin: 0 auto;
+  padding: 0.5em;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer img {
+  width: 40px;
+}
+
+.copyright {
+  padding: 2em;
+  font-size: 0.5em;
 }
