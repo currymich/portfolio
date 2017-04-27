@@ -19,7 +19,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  transition: all 0.25s;
+  transition: all 0.125s ease-in-out;
   /*transform: translateY(0%)*/
   /*transition: transform 0.4s ease-in-out;*/
   /*source: https://youthspecialties.com/blog/category/resources-for-youth-ministry/*/
@@ -54,7 +54,7 @@ header nav ul {
 header nav ul li {
   height: 0;
   overflow: hidden;
-  transition: all 0.25s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.125s ease-in-out;
   text-align: right;
   background: #fff;
   width: 2.5em;
