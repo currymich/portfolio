@@ -10,9 +10,6 @@ body {
   font-family: "Patrick Hand", sans-serif;
 }
 
-.pageBreak {
-  color: #ddd;
-  text-align: center;
 }
 
 header {
@@ -51,19 +48,27 @@ header nav ul {
   justify-content: space-between;
 }
 
+header nav ul li:nth-of-type(2) {
+  margin-top: 0.6em;
+}
+
 header nav ul li {
   height: 0;
   overflow: hidden;
-  transition: all 0.125s ease-in-out;
+  transition: all 0.2s ease-in-out;
   text-align: right;
   background: #fff;
   width: 2.5em;
 }
 
+.extended {
+  height: 1.5em;
+}
+
 #menuButton {
   display: block;
   height: 2.2em;
-  padding: 0.3em 0.6em 1em 1.0em;
+  padding: 0.75em 0.75em 1em 1.0em;
   background: transparent;
 }
 
@@ -79,6 +84,11 @@ header nav ul a:hover, nav ul a.active {
   color: #21564b;
 }
 
+.pageBreak {
+  display: none;
+}
+
+
 section {
   width: 90%;
   margin: 0 auto;
@@ -86,13 +96,13 @@ section {
   text-align: center;
 }
 
-section h1, section h2 {
+section h1, section h2, section h3 {
   font-family: 'Quicksand';
 }
 
 section h1 {
   color: #1e836c;
-  font-size: 2.0em;
+  font-size: 1.75em;
   padding-bottom: 0.75em;
 }
 
@@ -117,22 +127,23 @@ section p {
 
 img.circle {
   margin-bottom: 1em;
-  height: 150px;
-  width: 150px;
+  height: 7.5em;
+  width: 7.5em;
   border-radius: 50%;
 }
 
+#skills div.container {
+  margin: 1.5em auto;
+  max-width: 50em;
+}
+
 img.skills {
-  width: 100px;
+  width: 5em;
   margin: 0.5em;
 }
 
-.container.skills {
-  margin: 1.5em 0;
-}
-
 img.screens {
-  width: 225px;
+  width: 12.5em;
   margin: 0.5em;
 }
 
@@ -194,17 +205,17 @@ footer img {
 }
 
 .project:first-of-type {
-  margin-top: 3em;
+  padding-top: 5em;
 }
 
 .project p {
-  width: 250px;
+  width: 12.5em;
   margin: 0 auto;
   color: #fff;
 }
 
 .project img {
-  width: 275px;
+  width: 15em;
 }
 
 #intro {
@@ -258,20 +269,26 @@ footer img {
   color: #fff;
 }
 
+/**************************
+
+  Desktop size
+
+ *************************/
+
 @media (min-width: 750px) {
 
-  img.circle {
-    height: 300px;
-    width: 300px;
+  .btn {
+    max-width: 10em;
+    margin: 4em auto;
   }
 
-  img.skills {
-    width: 200px;
-    margin: 0.5em;
+  header {
+    height: 5em;
   }
 
   header h3 {
     font-size: 2.0em;
+    width: 50%
     padding: 0.2em 0.6em;
   }
 
@@ -301,6 +318,19 @@ footer img {
     font-size: 1.5em;
   }
 
+  /**************************
+
+   Index page
+
+   *************************/
+
+  .pageBreak {
+    display: block;
+    color: #ddd;
+    text-align: center;
+    margin: 3em auto;
+  }
+
   section h1 {
     margin: 1em 0;
   }
@@ -313,19 +343,35 @@ footer img {
   section p {
     max-width: 20em;
     margin: 0 auto;
+    font-size: 1.25em;
   }
 
-  .btn {
-    max-width: 10em;
-    margin: 4em auto;
+  #hello {
+    margin-top: 7.5em;
   }
+
+  img.circle {
+    height: 15em;
+    width: 15em;
+  }
+
+  img.skills {
+    width: 7.5em;
+    margin: 0.5em;
+  }
+
+  /**************************
+
+   Work page
+
+   *************************/
 
   .project p {
-    width: 400px;
+    width: 20em;
     margin: 0 auto;
   }
 
   .project img {
-    width: 500px;
+    width: 25em;
   }
 }
