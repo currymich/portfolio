@@ -10,33 +10,59 @@ body {
   font-family: "Patrick Hand", sans-serif;
 }
 
+
+/**************************
+
+ Button configuration - all pages
+
+ *************************/
+
+.btn {
+  margin: 2em auto;
+  padding: 0.25em 0;
+  font-size: 1.2em;
+  border-radius: 0.2em;
+  background: #45b29a;
+  width: 80%
 }
+
+.btn a {
+  padding: 0.25em 1em;
+  text-decoration: none;
+  color: #1b7f69;
+  font-family: 'Quicksand';
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #3ea08a;
+}
+
+
+/**************************
+
+ Top nav bar - all pages
+
+ *************************/
 
 header {
   position: fixed;
+  background: #fff;
   top: 0;
   width: 100%;
-  transition: all 0.125s ease-in-out;
-  /*transform: translateY(0%)*/
-  /*transition: transform 0.4s ease-in-out;*/
-  /*source: https://youthspecialties.com/blog/category/resources-for-youth-ministry/*/
+  transition: all 0.2s ease-in-out;
 }
 
 header h3 {
   float: left;
   display: inline-block;
-  width: 50%;
+  width: 80%;
   padding: 0.6em;
   font-family: "Lobster";
 }
 
-.extended {
-  height: 1.5em;
-}
-
 header nav {
-  width: 50%;
-  padding: 0.25em;
+  width: 20%;
   float: right;
 }
 
@@ -84,6 +110,45 @@ header nav ul a:hover, nav ul a.active {
   color: #21564b;
 }
 
+/**************************
+
+ Bottom footer - all pages
+
+ *************************/
+
+footer {
+  background: #c5ded7;
+  text-align: center;
+  height: 6em;
+}
+
+footer ul {
+  width: 10em;
+  margin: 0 auto;
+  padding: 0.5em;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer img {
+  width: 2em;
+}
+
+.copyright {
+  padding: 2em;
+  font-size: 0.5em;
+}
+
+
+/**************************
+
+ Sections - Index
+
+ *************************/
+
 .pageBreak {
   display: none;
 }
@@ -108,6 +173,7 @@ section h1 {
 
 section h2 {
   padding: 0.75em 0;
+  text-decoration: underline;
 }
 
 section h3 {
@@ -151,52 +217,12 @@ img.screens {
   font-style: italic;
 }
 
-.btn {
-  margin: 2em auto;
-  padding: 0.25em 0;
-  font-size: 1.2em;
-  border-radius: 0.2em;
-  background: #45b29a;
-  width: 80%
-}
 
-.btn a {
-  padding: 0.25em 1em;
-  text-decoration: none;
-  color: #1b7f69;
-  font-family: 'Quicksand';
-  cursor: pointer;
-}
+/**************************
 
-.btn:hover {
-  background: #3ea08a;
-}
+ "Work" page
 
-footer {
-  background: #c5ded7;
-  text-align: center;
-  height: 6em;
-}
-
-footer ul {
-  width: 200px;
-  margin: 0 auto;
-  padding: 0.5em;
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-footer img {
-  width: 40px;
-}
-
-.copyright {
-  padding: 2em;
-  font-size: 0.5em;
-}
+ *************************/
 
 .project {
   margin: 0 auto;
@@ -292,14 +318,6 @@ footer img {
     padding: 0.2em 0.6em;
   }
 
-  #hello {
-    margin-top: 7.5em;
-  }
-
-  #menuButton {
-    display: none;
-  }
-
   header nav ul {
     padding: 0.5em;
     width: 15em;
@@ -316,6 +334,10 @@ footer img {
 
   header ul li a {
     font-size: 1.5em;
+  }
+
+  #menuButton {
+    display: none;
   }
 
   /**************************

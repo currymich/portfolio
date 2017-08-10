@@ -2,6 +2,7 @@
 $(document).ready(function(){
   $('#menuButton').on('click', function(event){
     $('header nav ul li').toggleClass('extended')
+    $('header').css({'overflow': 'visible'})
   })
 })
 
@@ -19,14 +20,14 @@ $(window).scroll(function(event){
 
   //if they are scrolling up, show nav
   } else {
-    $('header').css({'background': 'rgb(255, 255, 255)','height': '3.0em'})
+    $('header').css({'height': 'auto'})
   }
 
   //if the user is scrolled to top...
   if (currentScrollTop == 0) {
-    $('header').css({'background': 'transparent', 'border-bottom': 'none'})
+    $('header').css({'border-bottom': 'none'})
   } else {
-    $('header').css({'background': '#fff', 'border-bottom': '1px solid #ddd'})
+    $('header').css({'border-bottom': '1px solid #eee'})
   }
 
   lastScrollTop = currentScrollTop;
