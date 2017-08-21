@@ -2,7 +2,7 @@
 $(document).ready(function() {
 	$("#menuButton").on("click", function(event) {
 		$("header nav ul li").toggleClass("extended");
-		$("header").css({ overflow: "visible" });
+		// $("header").css({ overflow: "visible" });
 	});
 });
 
@@ -14,17 +14,16 @@ $(window).scroll(function(event) {
 	var currentScrollTop = $(this).scrollTop();
 
 	//if they are scrolling down, hide nav
-	if (currentScrollTop > lastScrollTop) {
-		$("header").css({ height: "0", overflow: "hidden" });
+	if (currentScrollTop > lastScrollTop && currentScrollTop > 60) {
+		$("header").removeClass("extended");
 		$("header nav ul li").removeClass("extended");
-
 		//if they are scrolling up, show nav
 	} else {
-		$("header").css({ height: "auto" });
+		$("header").addClass("extended")
 	}
 
 	//if the user is scrolled to top...
-	if (currentScrollTop == 0) {
+	if (currentScrollTop < 60) {
 		$("header").css({ "border-bottom": "none" });
 	} else {
 		$("header").css({ "border-bottom": "1px solid #eee" });
