@@ -247,8 +247,21 @@ img.screens {
   color: #fff;
 }
 
+.project .btn a {
+  color: #fff;
+}
+
+.project .img_container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .project img {
-  width: 15em;
+  margin: 1em 1em;
+  height: 275px;
+  width: 300px;
 }
 
 #intro {
@@ -260,48 +273,92 @@ img.screens {
   color: #555;
 }
 
-#connect_four {
-  background: #7dcc93;
-  color: #555;
+#project_1 {
+  background: #e24e42;
 }
 
-#connect_four p {
-  color: #555;
-}
-
-#project_2 {
-  background: #f76160;
-}
-
-#connect_four .btn, #project_2 .btn {
-  background: #2b3d51;
+#project_1 .btn {
+  background: #2a7f8a;
   transition: all 0.125s;
 }
 
-#connect_four .btn:hover, #project_2 .btn:hover {
-  background: #192430;
+#project_1 .btn:hover {
+  background: #085560;
 }
 
-#connect_four .btn a, #project_2 .btn a{
-  color: #fff;
+#project_2 {
+  background: #e9b000;
+}
+
+#project_2 .btn {
+  background: #0a5796;
+  transition: all 0.125s;
+}
+
+#project_2 .btn:hover {
+  background: #04355e;
 }
 
 #project_3 {
-  background: #31355b;
+  background: #008f95;
 }
 
 #project_3 .btn {
-  background: #4299ed;
+  background: #e99900;
 }
 
 #project_3 .btn:hover {
-  background: #1680e6;
+  background: #ffab00;
 }
 
-#project_3 .btn a {
-  color: #fff;
+#project_4 {
+  background: #ca4557;
 }
 
+#project_4 .btn {
+  background: #4a9e8d;
+}
+
+#project_4 .btn:hover {
+  background: #2e8876;
+}
+
+#project_5 {
+  background: #f89a1e;
+}
+
+#project_5 .btn {
+  background: #4949b7;
+}
+
+#project_5 .btn:hover {
+  background: #2c2cae;
+}
+
+#project_6 {
+  background: #3390cb;
+}
+
+#project_6 .btn {
+  background: #ff6834;
+}
+
+#project_6 .btn:hover {
+  background: #ff4607;
+}
+
+#project_7 {
+  background: #e24e42;
+}
+
+#project_7 .btn {
+  background: #2a7f8a;
+  transition: all 0.125s;
+}
+
+#project_7 .btn:hover {
+  background: #085560;
+}
 /**************************
 
   Desktop size
