@@ -261,7 +261,7 @@ img.screens {
 .project img {
   margin: 1em 1em;
   height: 275px;
-  width: 300px;
+  max-width: 500px;
 }
 
 #intro {
