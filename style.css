@@ -18,7 +18,7 @@ body {
  *************************/
 
 .btn {
-  margin: 2em auto;
+  margin: 0.5em auto;
   padding: 0.25em 0;
   font-size: 1.2em;
   border-radius: 0.2em;
@@ -27,7 +27,8 @@ body {
 }
 
 .btn a {
-  padding: 0.25em 1em;
+  width: 100%;
+  padding: 0.25em 2.0em;
   text-decoration: none;
   color: #1b7f69;
   font-family: 'Quicksand';
@@ -36,6 +37,11 @@ body {
 
 .btn:hover {
   background: #3ea08a;
+}
+
+.btns {
+  flex-flow: column;
+  margin: 1em auto;
 }
 
 
@@ -261,7 +267,7 @@ img.screens {
 .project img {
   margin: 1em 1em;
   height: 275px;
-  max-width: 500px;
+  max-width: 90%;
 }
 
 #intro {
@@ -367,9 +373,23 @@ img.screens {
 
 @media (min-width: 750px) {
 
+  .btns {
+    margin: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+  }
+
   .btn {
     max-width: 10em;
-    margin: 4em auto;
+  }
+
+  .btn a {
+    padding: 0.25em 1.5em;
+  }
+
+  .project img {
+    max-width: 500px;
   }
 
   .extended.navbar {
